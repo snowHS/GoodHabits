@@ -112,7 +112,7 @@ static sqlite3 * db = nil;
 }
 -(void)updateData
 {
-    
+    NSString * sql = @"";
 }
 -(void)deleteData
 {
