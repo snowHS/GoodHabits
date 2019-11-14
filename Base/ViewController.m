@@ -116,7 +116,8 @@ static sqlite3 * db = nil;
 }
 -(void)deleteData
 {
-    
+    NSString * sql = @"";
+
 }
 -(void)closeDB
 {
