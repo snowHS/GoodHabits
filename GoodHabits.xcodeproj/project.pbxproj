@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8474EF2B237904D900BD53EF /* MainListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8474EF2A237904D900BD53EF /* MainListCell.m */; };
+		84B24B3A237A3A2900C0A7C4 /* GoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B24B39237A3A2900C0A7C4 /* GoodModel.m */; };
+		84B24B40237A49F500C0A7C4 /* MoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B24B3F237A49F500C0A7C4 /* MoreView.m */; };
+		84CC472E237651C000C26B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CC472C237651C000C26B34 /* LaunchScreen.storyboard */; };
+		84CC4731237651C000C26B34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC4730237651C000C26B34 /* main.m */; };
+		84CC473B237651C100C26B34 /* GoodHabitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC473A237651C100C26B34 /* GoodHabitsTests.m */; };
+		84CC4746237651C100C26B34 /* GoodHabitsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC4745237651C100C26B34 /* GoodHabitsUITests.m */; };
+		84CC47B12376659000C26B34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC47A42376658F00C26B34 /* ViewController.m */; };
+		84CC47B22376659000C26B34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC47A52376658F00C26B34 /* AppDelegate.m */; };
+		84CC47B62376691200C26B34 /* GHNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC47B52376691200C26B34 /* GHNaviView.m */; };
+		84CC47BA237691CE00C26B34 /* StaticTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC47B9237691CE00C26B34 /* StaticTools.m */; };
+		84CC47BC2376A60000C26B34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CC47BB2376A60000C26B34 /* Images.xcassets */; };
+		84CC47C02376B5A700C26B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CC47BF2376B5A700C26B34 /* Main.storyboard */; };
+		84CC47C22376B94200C26B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CC47C12376B94200C26B34 /* Assets.xcassets */; };
+		CA21935665C494600755F03C /* libPods-GoodHabits.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 624DA4F76B986E359B6E14D4 /* libPods-GoodHabits.a */; };
+		E8575F3ABC34BE5150B27A3F /* libPods-GoodHabitsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2396B4EE56E6769AD712749A /* libPods-GoodHabitsTests.a */; };
+		EB140008FE2CB3A7E2B10606 /* libPods-GoodHabitsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DB158A373F734A2BB48F21 /* libPods-GoodHabitsUITests.a */; };
+		F27F1B88237C3B400097FB7D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F27F1B87237C3B400097FB7D /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CC4737237651C000C26B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CC4716237651BF00C26B34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CC471D237651BF00C26B34;
+			remoteInfo = GoodHabits;
+		};
+		84CC4742237651C100C26B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CC4716237651BF00C26B34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CC471D237651BF00C26B34;
+			remoteInfo = GoodHabits;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2396B4EE56E6769AD712749A /* libPods-GoodHabitsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodHabitsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DB158A373F734A2BB48F21 /* libPods-GoodHabitsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodHabitsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8334BCF67CFFF6E9F31C1C /* Pods-GoodHabits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabits.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabits/Pods-GoodHabits.release.xcconfig"; sourceTree = "<group>"; };
+		624DA4F76B986E359B6E14D4 /* libPods-GoodHabits.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodHabits.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C431F19B5A6E41B54A03B84 /* Pods-GoodHabitsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabitsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabitsUITests/Pods-GoodHabitsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8474EF29237904D900BD53EF /* MainListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainListCell.h; sourceTree = "<group>"; };
+		8474EF2A237904D900BD53EF /* MainListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainListCell.m; sourceTree = "<group>"; };
+		84B24B38237A3A2900C0A7C4 /* GoodModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodModel.h; sourceTree = "<group>"; };
+		84B24B39237A3A2900C0A7C4 /* GoodModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodModel.m; sourceTree = "<group>"; };
+		84B24B3E237A49F500C0A7C4 /* MoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreView.h; sourceTree = "<group>"; };
+		84B24B3F237A49F500C0A7C4 /* MoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreView.m; sourceTree = "<group>"; };
+		84CC471E237651BF00C26B34 /* GoodHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CC472D237651C000C26B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84CC472F237651C000C26B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CC4730237651C000C26B34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84CC4736237651C000C26B34 /* GoodHabitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodHabitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CC473A237651C100C26B34 /* GoodHabitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodHabitsTests.m; sourceTree = "<group>"; };
+		84CC473C237651C100C26B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CC4741237651C100C26B34 /* GoodHabitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodHabitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CC4745237651C100C26B34 /* GoodHabitsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodHabitsUITests.m; sourceTree = "<group>"; };
+		84CC4747237651C100C26B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CC47842376658F00C26B34 /* GoodHabits_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodHabits_Prefix.pch; sourceTree = "<group>"; };
+		84CC47A22376658F00C26B34 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84CC47A32376658F00C26B34 /* HabitsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitsDefine.h; sourceTree = "<group>"; };
+		84CC47A42376658F00C26B34 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84CC47A52376658F00C26B34 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84CC47A62376659000C26B34 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84CC47B42376691200C26B34 /* GHNaviView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHNaviView.h; sourceTree = "<group>"; };
+		84CC47B52376691200C26B34 /* GHNaviView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHNaviView.m; sourceTree = "<group>"; };
+		84CC47B8237691CE00C26B34 /* StaticTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTools.h; sourceTree = "<group>"; };
+		84CC47B9237691CE00C26B34 /* StaticTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticTools.m; sourceTree = "<group>"; };
+		84CC47BB2376A60000C26B34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84CC47BF2376B5A700C26B34 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		84CC47C12376B94200C26B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDD3719EADF4ED6C34DA25C1 /* Pods-GoodHabitsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabitsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabitsTests/Pods-GoodHabitsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFDB7C7D40DC9C8F4DAB5AB1 /* Pods-GoodHabitsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabitsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabitsTests/Pods-GoodHabitsTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8D7E30AD4291618713F4816 /* Pods-GoodHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabits/Pods-GoodHabits.debug.xcconfig"; sourceTree = "<group>"; };
+		F27F1B87237C3B400097FB7D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FABA199CFDC579067259D78D /* Pods-GoodHabitsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabitsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabitsUITests/Pods-GoodHabitsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CC471B237651BF00C26B34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27F1B88237C3B400097FB7D /* libsqlite3.tbd in Frameworks */,
+				CA21935665C494600755F03C /* libPods-GoodHabits.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CC4733237651C000C26B34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8575F3ABC34BE5150B27A3F /* libPods-GoodHabitsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CC473E237651C100C26B34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB140008FE2CB3A7E2B10606 /* libPods-GoodHabitsUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		624D9FCD3015F7899B110E2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8D7E30AD4291618713F4816 /* Pods-GoodHabits.debug.xcconfig */,
+				4C8334BCF67CFFF6E9F31C1C /* Pods-GoodHabits.release.xcconfig */,
+				CDD3719EADF4ED6C34DA25C1 /* Pods-GoodHabitsTests.debug.xcconfig */,
+				DFDB7C7D40DC9C8F4DAB5AB1 /* Pods-GoodHabitsTests.release.xcconfig */,
+				FABA199CFDC579067259D78D /* Pods-GoodHabitsUITests.debug.xcconfig */,
+				7C431F19B5A6E41B54A03B84 /* Pods-GoodHabitsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84CC4715237651BF00C26B34 = {
+			isa = PBXGroup;
+			children = (
+				84CC47842376658F00C26B34 /* GoodHabits_Prefix.pch */,
+				84CC47A12376658F00C26B34 /* Base */,
+				84CC47B3237668EB00C26B34 /* Classess */,
+				84CC47852376658F00C26B34 /* Resource */,
+				84CC4720237651BF00C26B34 /* GoodHabits */,
+				84CC4739237651C000C26B34 /* GoodHabitsTests */,
+				84CC4744237651C100C26B34 /* GoodHabitsUITests */,
+				84CC471F237651BF00C26B34 /* Products */,
+				F27F1B86237C3B400097FB7D /* Frameworks */,
+				624D9FCD3015F7899B110E2A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		84CC471F237651BF00C26B34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CC471E237651BF00C26B34 /* GoodHabits.app */,
+				84CC4736237651C000C26B34 /* GoodHabitsTests.xctest */,
+				84CC4741237651C100C26B34 /* GoodHabitsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CC4720237651BF00C26B34 /* GoodHabits */ = {
+			isa = PBXGroup;
+			children = (
+				84CC47BF2376B5A700C26B34 /* Main.storyboard */,
+				84CC472C237651C000C26B34 /* LaunchScreen.storyboard */,
+				84CC47C12376B94200C26B34 /* Assets.xcassets */,
+				84CC472F237651C000C26B34 /* Info.plist */,
+				84CC4730237651C000C26B34 /* main.m */,
+				84CC47BB2376A60000C26B34 /* Images.xcassets */,
+			);
+			path = GoodHabits;
+			sourceTree = "<group>";
+		};
+		84CC4739237651C000C26B34 /* GoodHabitsTests */ = {
+			isa = PBXGroup;
+			children = (
+				84CC473A237651C100C26B34 /* GoodHabitsTests.m */,
+				84CC473C237651C100C26B34 /* Info.plist */,
+			);
+			path = GoodHabitsTests;
+			sourceTree = "<group>";
+		};
+		84CC4744237651C100C26B34 /* GoodHabitsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84CC4745237651C100C26B34 /* GoodHabitsUITests.m */,
+				84CC4747237651C100C26B34 /* Info.plist */,
+			);
+			path = GoodHabitsUITests;
+			sourceTree = "<group>";
+		};
+		84CC47852376658F00C26B34 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84CC47A12376658F00C26B34 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84CC47A32376658F00C26B34 /* HabitsDefine.h */,
+				84CC47B8237691CE00C26B34 /* StaticTools.h */,
+				84CC47B9237691CE00C26B34 /* StaticTools.m */,
+				84CC47A22376658F00C26B34 /* AppDelegate.h */,
+				84CC47A52376658F00C26B34 /* AppDelegate.m */,
+				84CC47A62376659000C26B34 /* ViewController.h */,
+				84CC47A42376658F00C26B34 /* ViewController.m */,
+				84B24B3E237A49F500C0A7C4 /* MoreView.h */,
+				84B24B3F237A49F500C0A7C4 /* MoreView.m */,
+				8474EF29237904D900BD53EF /* MainListCell.h */,
+				8474EF2A237904D900BD53EF /* MainListCell.m */,
+				84B24B38237A3A2900C0A7C4 /* GoodModel.h */,
+				84B24B39237A3A2900C0A7C4 /* GoodModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84CC47B3237668EB00C26B34 /* Classess */ = {
+			isa = PBXGroup;
+			children = (
+				84CC47B72376917700C26B34 /* CustomView */,
+			);
+			path = Classess;
+			sourceTree = "<group>";
+		};
+		84CC47B72376917700C26B34 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				84CC47B42376691200C26B34 /* GHNaviView.h */,
+				84CC47B52376691200C26B34 /* GHNaviView.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F27F1B86237C3B400097FB7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F27F1B87237C3B400097FB7D /* libsqlite3.tbd */,
+				624DA4F76B986E359B6E14D4 /* libPods-GoodHabits.a */,
+				2396B4EE56E6769AD712749A /* libPods-GoodHabitsTests.a */,
+				44DB158A373F734A2BB48F21 /* libPods-GoodHabitsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CC471D237651BF00C26B34 /* GoodHabits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CC474A237651C100C26B34 /* Build configuration list for PBXNativeTarget "GoodHabits" */;
+			buildPhases = (
+				A1059B2DE647C4BD8FF4ADE4 /* [CP] Check Pods Manifest.lock */,
+				84CC471A237651BF00C26B34 /* Sources */,
+				84CC471B237651BF00C26B34 /* Frameworks */,
+				84CC471C237651BF00C26B34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodHabits;
+			productName = GoodHabits;
+			productReference = 84CC471E237651BF00C26B34 /* GoodHabits.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84CC4735237651C000C26B34 /* GoodHabitsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CC474D237651C100C26B34 /* Build configuration list for PBXNativeTarget "GoodHabitsTests" */;
+			buildPhases = (
+				070F5ABE9DC0310E3A626317 /* [CP] Check Pods Manifest.lock */,
+				84CC4732237651C000C26B34 /* Sources */,
+				84CC4733237651C000C26B34 /* Frameworks */,
+				84CC4734237651C000C26B34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CC4738237651C000C26B34 /* PBXTargetDependency */,
+			);
+			name = GoodHabitsTests;
+			productName = GoodHabitsTests;
+			productReference = 84CC4736237651C000C26B34 /* GoodHabitsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84CC4740237651C100C26B34 /* GoodHabitsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CC4750237651C100C26B34 /* Build configuration list for PBXNativeTarget "GoodHabitsUITests" */;
+			buildPhases = (
+				3DAB341C4C332ABF246843EE /* [CP] Check Pods Manifest.lock */,
+				84CC473D237651C100C26B34 /* Sources */,
+				84CC473E237651C100C26B34 /* Frameworks */,
+				84CC473F237651C100C26B34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CC4743237651C100C26B34 /* PBXTargetDependency */,
+			);
+			name = GoodHabitsUITests;
+			productName = GoodHabitsUITests;
+			productReference = 84CC4741237651C100C26B34 /* GoodHabitsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CC4716237651BF00C26B34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = sifangL;
+				TargetAttributes = {
+					84CC471D237651BF00C26B34 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					84CC4735237651C000C26B34 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 84CC471D237651BF00C26B34;
+					};
+					84CC4740237651C100C26B34 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 84CC471D237651BF00C26B34;
+					};
+				};
+			};
+			buildConfigurationList = 84CC4719237651BF00C26B34 /* Build configuration list for PBXProject "GoodHabits" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84CC4715237651BF00C26B34;
+			productRefGroup = 84CC471F237651BF00C26B34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84CC471D237651BF00C26B34 /* GoodHabits */,
+				84CC4735237651C000C26B34 /* GoodHabitsTests */,
+				84CC4740237651C100C26B34 /* GoodHabitsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CC471C237651BF00C26B34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CC47C02376B5A700C26B34 /* Main.storyboard in Resources */,
+				84CC472E237651C000C26B34 /* LaunchScreen.storyboard in Resources */,
+				84CC47C22376B94200C26B34 /* Assets.xcassets in Resources */,
+				84CC47BC2376A60000C26B34 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CC4734237651C000C26B34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CC473F237651C100C26B34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		070F5ABE9DC0310E3A626317 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodHabitsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DAB341C4C332ABF246843EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodHabitsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1059B2DE647C4BD8FF4ADE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodHabits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CC471A237651BF00C26B34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CC47B22376659000C26B34 /* AppDelegate.m in Sources */,
+				84CC47B62376691200C26B34 /* GHNaviView.m in Sources */,
+				84CC47BA237691CE00C26B34 /* StaticTools.m in Sources */,
+				84CC4731237651C000C26B34 /* main.m in Sources */,
+				8474EF2B237904D900BD53EF /* MainListCell.m in Sources */,
+				84CC47B12376659000C26B34 /* ViewController.m in Sources */,
+				84B24B3A237A3A2900C0A7C4 /* GoodModel.m in Sources */,
+				84B24B40237A49F500C0A7C4 /* MoreView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CC4732237651C000C26B34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CC473B237651C100C26B34 /* GoodHabitsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CC473D237651C100C26B34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CC4746237651C100C26B34 /* GoodHabitsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CC4738237651C000C26B34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CC471D237651BF00C26B34 /* GoodHabits */;
+			targetProxy = 84CC4737237651C000C26B34 /* PBXContainerItemProxy */;
+		};
+		84CC4743237651C100C26B34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CC471D237651BF00C26B34 /* GoodHabits */;
+			targetProxy = 84CC4742237651C100C26B34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84CC472C237651C000C26B34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CC472D237651C000C26B34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84CC4748237651C100C26B34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84CC4749237651C100C26B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CC474B237651C100C26B34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D7E30AD4291618713F4816 /* Pods-GoodHabits.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ERPN3RDS5D;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GoodHabits_Prefix.pch;
+				INFOPLIST_FILE = GoodHabits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Circle.GoodHabits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84CC474C237651C100C26B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C8334BCF67CFFF6E9F31C1C /* Pods-GoodHabits.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ERPN3RDS5D;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GoodHabits_Prefix.pch;
+				INFOPLIST_FILE = GoodHabits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Circle.GoodHabits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		84CC474E237651C100C26B34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD3719EADF4ED6C34DA25C1 /* Pods-GoodHabitsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodHabitsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Circle.GoodHabitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodHabits.app/GoodHabits";
+			};
+			name = Debug;
+		};
+		84CC474F237651C100C26B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDB7C7D40DC9C8F4DAB5AB1 /* Pods-GoodHabitsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodHabitsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Circle.GoodHabitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodHabits.app/GoodHabits";
+			};
+			name = Release;
+		};
+		84CC4751237651C100C26B34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABA199CFDC579067259D78D /* Pods-GoodHabitsUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodHabitsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Circle.GoodHabitsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodHabits;
+			};
+			name = Debug;
+		};
+		84CC4752237651C100C26B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C431F19B5A6E41B54A03B84 /* Pods-GoodHabitsUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoodHabitsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Circle.GoodHabitsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodHabits;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CC4719237651BF00C26B34 /* Build configuration list for PBXProject "GoodHabits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CC4748237651C100C26B34 /* Debug */,
+				84CC4749237651C100C26B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CC474A237651C100C26B34 /* Build configuration list for PBXNativeTarget "GoodHabits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CC474B237651C100C26B34 /* Debug */,
+				84CC474C237651C100C26B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CC474D237651C100C26B34 /* Build configuration list for PBXNativeTarget "GoodHabitsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CC474E237651C100C26B34 /* Debug */,
+				84CC474F237651C100C26B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CC4750237651C100C26B34 /* Build configuration list for PBXNativeTarget "GoodHabitsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CC4751237651C100C26B34 /* Debug */,
+				84CC4752237651C100C26B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84CC4716237651BF00C26B34 /* Project object */;
+}
