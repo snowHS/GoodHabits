@@ -21,6 +21,7 @@
 		84CC47BC2376A60000C26B34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CC47BB2376A60000C26B34 /* Images.xcassets */; };
 		84CC47C02376B5A700C26B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CC47BF2376B5A700C26B34 /* Main.storyboard */; };
 		84CC47C22376B94200C26B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CC47C12376B94200C26B34 /* Assets.xcassets */; };
+		C0EB4EDE237E3A580031A1B1 /* LaunchScreen@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C0EB4EDD237E3A580031A1B1 /* LaunchScreen@2x.jpeg */; };
 		CA21935665C494600755F03C /* libPods-GoodHabits.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 624DA4F76B986E359B6E14D4 /* libPods-GoodHabits.a */; };
 		E8575F3ABC34BE5150B27A3F /* libPods-GoodHabitsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2396B4EE56E6769AD712749A /* libPods-GoodHabitsTests.a */; };
 		EB140008FE2CB3A7E2B10606 /* libPods-GoodHabitsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DB158A373F734A2BB48F21 /* libPods-GoodHabitsUITests.a */; };
@@ -79,6 +80,7 @@
 		84CC47BB2376A60000C26B34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84CC47BF2376B5A700C26B34 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84CC47C12376B94200C26B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0EB4EDD237E3A580031A1B1 /* LaunchScreen@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "LaunchScreen@2x.jpeg"; sourceTree = "<group>"; };
 		CDD3719EADF4ED6C34DA25C1 /* Pods-GoodHabitsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabitsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabitsTests/Pods-GoodHabitsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFDB7C7D40DC9C8F4DAB5AB1 /* Pods-GoodHabitsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabitsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabitsTests/Pods-GoodHabitsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8D7E30AD4291618713F4816 /* Pods-GoodHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabits/Pods-GoodHabits.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +136,7 @@
 				84CC47842376658F00C26B34 /* GoodHabits_Prefix.pch */,
 				84CC47A12376658F00C26B34 /* Base */,
 				84CC47B3237668EB00C26B34 /* Classess */,
-				84CC47852376658F00C26B34 /* Resource */,
+				C0EB4ED9237E369A0031A1B1 /* Resource */,
 				84CC4720237651BF00C26B34 /* GoodHabits */,
 				84CC4739237651C000C26B34 /* GoodHabitsTests */,
 				84CC4744237651C100C26B34 /* GoodHabitsUITests */,
@@ -185,13 +187,6 @@
 			path = GoodHabitsUITests;
 			sourceTree = "<group>";
 		};
-		84CC47852376658F00C26B34 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		84CC47A12376658F00C26B34 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +222,22 @@
 				84CC47B52376691200C26B34 /* GHNaviView.m */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C0EB4ED9237E369A0031A1B1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C0EB4EDA237E369A0031A1B1 /* images */,
+			);
+			path = Resource;
+			sourceTree = SOURCE_ROOT;
+		};
+		C0EB4EDA237E369A0031A1B1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C0EB4EDD237E3A580031A1B1 /* LaunchScreen@2x.jpeg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		F27F1B86237C3B400097FB7D /* Frameworks */ = {
@@ -347,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CC47C02376B5A700C26B34 /* Main.storyboard in Resources */,
+				C0EB4EDE237E3A580031A1B1 /* LaunchScreen@2x.jpeg in Resources */,
 				84CC472E237651C000C26B34 /* LaunchScreen.storyboard in Resources */,
 				84CC47C22376B94200C26B34 /* Assets.xcassets in Resources */,
 				84CC47BC2376A60000C26B34 /* Images.xcassets in Resources */,
@@ -602,7 +614,6 @@
 			baseConfigurationReference = E8D7E30AD4291618713F4816 /* Pods-GoodHabits.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ERPN3RDS5D;
@@ -627,7 +638,6 @@
 			baseConfigurationReference = 4C8334BCF67CFFF6E9F31C1C /* Pods-GoodHabits.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ERPN3RDS5D;

@@ -17,7 +17,15 @@ target 'GoodHabits' do
     # Pods for testing
   end
 
-pod 'FMDB'
-pod 'Masonry'
+pod 'FMDB',:inhibit_warnings => true
+pod 'Masonry',:inhibit_warnings => true
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+        end
+    end
+end
 
 end
