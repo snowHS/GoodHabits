@@ -26,11 +26,12 @@
     return self;
 }
 #pragma mark - 定制
--(void)setTitle:(NSString *)title leftBtnImage:(NSString *)imageL rightBtnImage:(NSString *)imageR
+-(void)setTitle:(NSString *)title leftBtnImage:(NSString *)imageL rightBtnImage:(NSString *)imageR rightTitle:(NSString *)rightTitle
 {
     self.titleStr = title;
     self.leftImage = imageL;
     self.rightImage = imageR;
+    self.rightTitle = rightTitle;
 }
 
 #pragma mark - 默认设置
@@ -64,6 +65,9 @@
     
     self.rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.rightBtn setImage:[UIImage imageNamed:self.rightImage] forState:UIControlStateNormal];
+    [self.rightBtn setTitle:self.rightTitle forState:UIControlStateNormal];
+    [self.rightBtn setTitleColor:BlackColor forState:UIControlStateNormal];
+    self.rightBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [self.rightBtn.imageView setContentMode:UIViewContentModeRight];
     self.rightBtn.tag = 1;
     [self.rightBtn addTarget:self action:@selector(btnsClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -111,6 +115,12 @@
     _leftImage = leftImage;
     [self.backBtn setImage:[UIImage imageNamed:leftImage] forState:UIControlStateNormal];
     self.backBtn.hidden = self.hiddenLeft;
+}
+-(void)setRightTitle:(NSString *)rightTitle
+{
+    _rightTitle = rightTitle;
+    [self.rightBtn setTitle:rightTitle forState:UIControlStateNormal];
+    self.rightBtn.hidden = self.hiddenRight;
 }
 -(void)setNavHeight:(CGFloat)navHeight
 {

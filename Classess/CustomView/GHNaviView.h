@@ -28,9 +28,11 @@ typedef void(^ActionBlock)(NSInteger tag);
 @property (strong ,nonatomic) NSString * titleStr;
 @property (strong ,nonatomic) NSString * leftImage;
 @property (strong ,nonatomic) NSString * rightImage;
+@property (strong ,nonatomic) NSString * rightTitle;
+
 @property (assign ,nonatomic) BOOL hiddenLeft;
 @property (assign ,nonatomic) BOOL hiddenRight;
--(void)setTitle:(NSString *)title leftBtnImage:(NSString *)imageL rightBtnImage:(NSString *)imageR;
+-(void)setTitle:(NSString *)title leftBtnImage:(NSString *)imageL rightBtnImage:(NSString *)imageR rightTitle:(NSString *)rightTitle;
 
 
 @end

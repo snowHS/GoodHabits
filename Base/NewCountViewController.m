@@ -21,65 +21,69 @@
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self addSubviews];
 }
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBar.hidden = NO;
-    [self setNaviItem];
-}
 -(void)addSubviews
 {
+    GHNaviView * naviView = [[GHNaviView alloc] init];
+    [naviView setTitle:@"创建计数器" leftBtnImage:@"backimage_btn" rightBtnImage:@"" rightTitle:@"保存"];
+    WeakObj(self)
+    naviView.block = ^(NSInteger tag) {
+        if (tag == 0) {
+            [selfWeak.navigationController popViewControllerAnimated:YES];
+        }
+        else {
+            //保存
+        }
+    };
+    [self.view addSubview:naviView];
+    
     UILabel * titleLabel = [[UILabel alloc] init];
     titleLabel.text = @"标题";
     titleLabel.font = [UIFont systemFontOfSize:15];
     [self.view addSubview:titleLabel];
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.view).offset(16);
+        make.top.mas_equalTo(naviView.mas_bottom).offset(16);
         make.left.mas_equalTo(16);
         make.right.mas_equalTo(-16);
     }];
+    
     UIView * view = [[UIView alloc] init];
+    view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
-       make.top.mas_equalTo(titleLabel).offset(5);
-       make.left.mas_equalTo(16);
-       make.height.mas_equalTo(44);
+        make.top.mas_equalTo(titleLabel.mas_bottom).offset(5);
+        make.left.right.mas_equalTo(0);
+        make.height.mas_equalTo(44);
     }];
+    
     UITextField * nametf = [[UITextField alloc] init];
+    nametf.font = [UIFont systemFontOfSize:15];
+    nametf.textColor = BlackColor;
+    nametf.placeholder = @"请输入计数的标题";
     [view addSubview:nametf];
     [nametf mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.mas_equalTo(0);
         make.left.mas_equalTo(16);
-        make.right.mas_equalTo(-17);
+        make.right.mas_equalTo(-16);
     }];
 
 }
--(void)setNaviItem
-{
-    UIButton * backbtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backbtn.frame = CGRectMake(0, 0, 44, 44);
-    [backbtn setImage:[UIImage imageNamed:@"backimage_btn"] forState:UIControlStateNormal];
-    [backbtn addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem * backItem = [[UIBarButtonItem alloc] initWithCustomView:backbtn];
-    self.navigationItem.leftBarButtonItem = backItem;
-    
-    UIButton * savebtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    savebtn.frame = CGRectMake(0, 0, 60, 44);
-    savebtn.titleLabel.textAlignment = NSTextAlignmentRight;
-    [savebtn setTitleColor:BlackColor forState:UIControlStateNormal];
-    savebtn.titleLabel.font = [UIFont systemFontOfSize:15];
-    [savebtn setTitle:@"保存" forState:UIControlStateNormal];
-    [backbtn addTarget:self action:@selector(saveAction:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem * saveItem = [[UIBarButtonItem alloc] initWithCustomView:savebtn];
-    self.navigationItem.rightBarButtonItem = saveItem;
-    
-}
+
 -(void)backAction:(UIButton *)btn
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)saveAction:(UIButton *)btn
 {
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.hidden = NO;
 }
 /*
 #pragma mark - Navigation

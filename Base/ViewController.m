@@ -11,7 +11,7 @@
 #import "GoodModel.h"
 #import "MoreView.h"
 #import "FMDatabase.h"
-#import "NewDayListViewController.h"
+#import "NewCountViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -36,7 +36,7 @@
 {
     //导航
     GHNaviView * naviView = [[GHNaviView alloc] init];
-    [naviView setTitle:@"养成好习惯" leftBtnImage:@"Chat_icon_jianpan" rightBtnImage:@"adressNew_iconfont-bianji"];
+    [naviView setTitle:@"养成好习惯" leftBtnImage:@"Chat_icon_jianpan" rightBtnImage:@"adressNew_iconfont-bianji" rightTitle:@""];
     WeakObj(self)
     naviView.block = ^(NSInteger tag) {
         [selfWeak naviBtnClick:tag];
@@ -66,7 +66,7 @@
     }
     else {
         //add New
-        NewDayListViewController * vc = [[NewDayListViewController alloc] init];
+        NewCountViewController * vc = [[NewCountViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
