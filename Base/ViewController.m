@@ -10,10 +10,8 @@
 #import "MainListCell.h"
 #import "GoodModel.h"
 #import "MoreView.h"
-#import <sqlite3.h>
 #import "FMDatabase.h"
-
-static sqlite3 * db = nil;
+#import "NewDayListViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -32,10 +30,7 @@ static sqlite3 * db = nil;
     GoodModel * model = [[GoodModel alloc] init];
     [model setValuesForKeysWithDictionary:dic];
     self.dataArray = [@[model] mutableCopy];
-    [self createDB];
-    [self createHabitsTable];
-    [self insertData];
-    [self closeDB];
+
 }
 -(void)setsubViews
 {
@@ -71,60 +66,11 @@ static sqlite3 * db = nil;
     }
     else {
         //add New
-        
+        NewDayListViewController * vc = [[NewDayListViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
-#pragma mark - 数据库
-//创建
--(void)createDB
-{
-    NSString * path = [NSString stringWithFormat:@"%@/Documents/data.sqlite",NSHomeDirectory()];
-    //后缀 .sqlite   .db  .rdb
-    NSFileManager * fm = [NSFileManager defaultManager];
-    if (!fm) {
-        [fm createFileAtPath:path contents:nil attributes:nil];
-    }
-    NSLog(@"数据库地址:%@",path);
-    sqlite3_open([path UTF8String], &db);
-}
--(void)createHabitsTable
-{
-    NSString * sql = @"create table if not exists Habits(ID INTEGER primary key,title TEXT,currentCount INTEGER,targetCount INTEGER)";
-    char * error = nil;
-    int result = sqlite3_exec(db, [sql UTF8String], NULL, NULL, &error);
-    if (result != SQLITE_OK) {
-        NSLog(@"创建失败:%@",[NSString stringWithUTF8String:error]);
-    }
-}
--(void)insertData
-{
-    NSString * sql = @"insert into Habits(ID,title,currentCount,targetCount) values(\"1\",\"生活\",\"3\",\"10\")";
-    //数据库描述对象
-    sqlite3_stmt * stmt = nil;
-    int result = sqlite3_prepare_v2(db, [sql UTF8String], -1, &stmt, NULL);
-    if (result == SQLITE_OK) {
-        sqlite3_step(stmt);
-        sqlite3_finalize(stmt);
-    }
-    else {
-        NSLog(@"插入数据失败");
-    }
-}
--(void)updateData
-{
-    NSString * sql = @"";
-}
--(void)deleteData
-{
-    NSString * sql = @"";
 
-}
--(void)closeDB
-{
-    if (db) {
-        sqlite3_close(db);
-    }
-}
 #pragma mark - TableDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

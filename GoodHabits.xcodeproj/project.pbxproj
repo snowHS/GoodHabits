@@ -26,6 +26,7 @@
 		E8575F3ABC34BE5150B27A3F /* libPods-GoodHabitsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2396B4EE56E6769AD712749A /* libPods-GoodHabitsTests.a */; };
 		EB140008FE2CB3A7E2B10606 /* libPods-GoodHabitsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DB158A373F734A2BB48F21 /* libPods-GoodHabitsUITests.a */; };
 		F27F1B88237C3B400097FB7D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F27F1B87237C3B400097FB7D /* libsqlite3.tbd */; };
+		F2CA5DE5238569B700BE8ED6 /* NewCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA5DE4238569B700BE8ED6 /* NewCountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		DFDB7C7D40DC9C8F4DAB5AB1 /* Pods-GoodHabitsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabitsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabitsTests/Pods-GoodHabitsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8D7E30AD4291618713F4816 /* Pods-GoodHabits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabits/Pods-GoodHabits.debug.xcconfig"; sourceTree = "<group>"; };
 		F27F1B87237C3B400097FB7D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F2CA5DE3238569B700BE8ED6 /* NewCountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewCountViewController.h; sourceTree = "<group>"; };
+		F2CA5DE4238569B700BE8ED6 /* NewCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewCountViewController.m; sourceTree = "<group>"; };
 		FABA199CFDC579067259D78D /* Pods-GoodHabitsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHabitsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodHabitsUITests/Pods-GoodHabitsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +200,8 @@
 				84CC47A52376658F00C26B34 /* AppDelegate.m */,
 				84CC47A62376659000C26B34 /* ViewController.h */,
 				84CC47A42376658F00C26B34 /* ViewController.m */,
+				F2CA5DE3238569B700BE8ED6 /* NewCountViewController.h */,
+				F2CA5DE4238569B700BE8ED6 /* NewCountViewController.m */,
 				84B24B3E237A49F500C0A7C4 /* MoreView.h */,
 				84B24B3F237A49F500C0A7C4 /* MoreView.m */,
 				8474EF29237904D900BD53EF /* MainListCell.h */,
@@ -446,6 +451,7 @@
 				84CC47B22376659000C26B34 /* AppDelegate.m in Sources */,
 				84CC47B62376691200C26B34 /* GHNaviView.m in Sources */,
 				84CC47BA237691CE00C26B34 /* StaticTools.m in Sources */,
+				F2CA5DE5238569B700BE8ED6 /* NewCountViewController.m in Sources */,
 				84CC4731237651C000C26B34 /* main.m in Sources */,
 				8474EF2B237904D900BD53EF /* MainListCell.m in Sources */,
 				84CC47B12376659000C26B34 /* ViewController.m in Sources */,
